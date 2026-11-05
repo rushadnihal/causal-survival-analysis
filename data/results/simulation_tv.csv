@@ -1,0 +1,4 @@
+,mean,bias,sd,rmse,true_RD
+unadjusted,-0.63,12.13,1.79,12.26,-12.76
+adjusted_for_L,-5.66,7.1,2.04,7.38,-12.76
+IPTW_MSM,-10.45,2.31,2.34,3.29,-12.76

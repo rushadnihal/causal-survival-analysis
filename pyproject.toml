@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tte-cvd"
+version = "0.1.0"
+description = "Target trial emulation: ACEi/ARB use and cardiovascular death in type 2 diabetes + CKD (NHANES)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "lifelines",
+    "matplotlib",
+    "pyreadstat",
+    "httpx",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
