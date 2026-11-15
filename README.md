@@ -1,5 +1,7 @@
 # Target trial emulation: ACEi/ARB use and cardiovascular death in type 2 diabetes with CKD (NHANES 2005-2018)
 
+[![CI](https://github.com/rushadnihal/causal-survival-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/rushadnihal/causal-survival-analysis/actions/workflows/ci.yml)
+
 An installable Python project that emulates a hypothetical randomized trial with observational NHANES data,
 using inverse-probability weighting, a parametric g-formula and competing-risks survival estimators.
 The headline result is a carefully qualified **null / inconclusive** finding on cardiovascular death, plus a diagnosis of why:
@@ -162,3 +164,7 @@ python3 -m pip install streamlit
 python3 -m streamlit run scripts/dashboard.py
 ```
 Four tabs (Summary, Effect estimates, Bias diagnostics, Simulations) read `data/results/*.csv` and `figures/`.
+
+## Licence
+
+MIT (see `LICENSE`).
