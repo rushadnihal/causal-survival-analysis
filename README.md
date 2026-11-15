@@ -92,7 +92,6 @@ src/tte/            library: mortality parser, propensity design matrix, stabili
 scripts/            runnable pipeline steps (run from the project root)
 tests/              unit tests (weighted AJ vs Kaplan-Meier, restricted means, weight stabilization, mortality layout)
 figures/            cohort flowchart, causal DAG, propensity overlap, Love plot
-archive/            superseded scratch scripts
 data/raw, data/processed   downloaded files and analytic cohorts (git-ignored)
 ```
 

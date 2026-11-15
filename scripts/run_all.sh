@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Re-run the whole analysis from the weighting step onward and write every result to data/results/.
-# Prerequisites: raw data downloaded, cohort built (build_cohort / build_covariates / add_meds), and
-# `python3 scripts/patch_exports.py` run once.
+# Prerequisites: raw data downloaded and cohort built (build_cohort / build_covariates / add_meds).
 # Takes roughly 20-40 minutes. Run from anywhere:  bash scripts/run_all.sh
 set -euo pipefail
 cd "$(dirname "$0")/.."
