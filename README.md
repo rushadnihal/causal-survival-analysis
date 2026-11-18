@@ -98,7 +98,8 @@ data/raw, data/processed   downloaded files and analytic cohorts (git-ignored)
 ## Reproduce
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
-python3 -m pip install -e ".[dev]"
+python3 -m pip install -r requirements-lock.txt   # pinned versions (Python 3.12), the ones CI tests
+python3 -m pip install -e . --no-deps
 python3 -m pytest
 
 python3 scripts/download_nhanes.py
